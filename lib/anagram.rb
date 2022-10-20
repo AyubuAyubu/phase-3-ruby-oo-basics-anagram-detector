@@ -4,10 +4,11 @@ class Anagram
     def initialize(word)
         @word = word
     end
-    # expected: [pass an array]
-    #split return: ["we", "love","ruby", "object", "oriented", "language"] === when we pass our array
-    #select and filter are the same
-    #array.select{|x| x.split('').sort == @word.split('').sort }
+    #step 1 expected: [pass an array]
+    #step 2 use select or filter to get new array
+    #step 3 array.select{|x| x.split('').sort == @word.split('').sort }
+    #step 4 split return: ["we", "love","ruby", "object", "oriented", "language"] === when we pass our array
+    
     def match(array)
         array.select do |new_word|
             new_word.split('').sort == word.split('').sort 
